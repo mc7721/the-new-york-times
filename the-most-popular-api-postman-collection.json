@@ -1,0 +1,167 @@
+{
+    "id": "fab0e6cdc4bb12b3dd276b67bdc4dbaa",
+    "name": "The Most Popular API",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "2433c3379dc3c91567496531c067f61c",
+            "name": "",
+            "url": "http:\/\/api.nytimes.com\/svc\/mostpopular\/v2\/mostshared\/{section}\/{time-period}.json",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "parameters",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "fab0e6cdc4bb12b3dd276b67bdc4dbaa",
+            "rawModeData": ""
+        },
+        {
+            "id": "da70aeae49d6069f2a967c54e09f8b7e",
+            "name": "Most Shared by Section & Time Period",
+            "url": "http:\/\/api.nytimes.com\/svc\/mostpopular\/v2\/mostshared\/{section}\/{time-period}.json",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "api-key",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "fab0e6cdc4bb12b3dd276b67bdc4dbaa",
+            "rawModeData": ""
+        },
+        {
+            "id": "9e475857387a7e3e4d884d93b2ff5f1e",
+            "name": "",
+            "url": "http:\/\/api.nytimes.com\/svc\/mostpopular\/v2\/mostemailed\/{section}\/{time-period}.json",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "parameters",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "fab0e6cdc4bb12b3dd276b67bdc4dbaa",
+            "rawModeData": ""
+        },
+        {
+            "id": "0d108b3569c433aec9ac90896feef6f4",
+            "name": "Most Emailed by Section & Time Period",
+            "url": "http:\/\/api.nytimes.com\/svc\/mostpopular\/v2\/mostemailed\/{section}\/{time-period}.json",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "api-key",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "fab0e6cdc4bb12b3dd276b67bdc4dbaa",
+            "rawModeData": ""
+        },
+        {
+            "id": "c27617a460dc9e455b91ba45e8b36139",
+            "name": "",
+            "url": "http:\/\/api.nytimes.com\/svc\/mostpopular\/v2\/mostviewed\/{section}\/{time-period}.json",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "parameters",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "fab0e6cdc4bb12b3dd276b67bdc4dbaa",
+            "rawModeData": ""
+        },
+        {
+            "id": "8ee9a19e28e83b5020d4eaf66ae2a8c3",
+            "name": "Most Viewed by Section & Time Period",
+            "url": "http:\/\/api.nytimes.com\/svc\/mostpopular\/v2\/mostviewed\/{section}\/{time-period}.json",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "fab0e6cdc4bb12b3dd276b67bdc4dbaa",
+            "rawModeData": ""
+        }
+    ]
+}
