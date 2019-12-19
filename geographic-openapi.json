@@ -1,0 +1,177 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "Geographic",
+        "description": "The Geographic API extends the Semantic API, using a linked data approach to enhance location concepts used in The New York Times' controlled vocabulary and data resources which combine them with the GeoNames database, an authoritative and free to use database of global geographical places, names and features.\n",
+        "termsOfService": "http:\/\/developer.nytimes.com\/tou"
+    },
+    "servers": [
+        "http:\/\/api.nytimes.com\/svc\/semantic\/v2\/geocodes"
+    ],
+    "paths": {
+        "\/query.json": {
+            "get": {
+                "summary": "Geographic API",
+                "description": "Geographic API",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "query",
+                        "description": "A displayable name for the specified place."
+                    },
+                    {
+                        "name": "latitude",
+                        "in": "query",
+                        "description": "The latitude of the specified place.\n"
+                    },
+                    {
+                        "name": "longitude",
+                        "in": "query",
+                        "description": "The longitude of the specified place."
+                    },
+                    {
+                        "name": "elevation",
+                        "in": "query",
+                        "description": "The elevation of the specified place, in meters."
+                    },
+                    {
+                        "name": "sw",
+                        "in": "query",
+                        "description": "Along with ne, forms a bounded box using the longitude and latitude coordinates specified as the southwest corner. The search results are limited to the resulting box. Two float values, separated by a comma `latitude,longitude` <br\/> The ne parameter is required to use this parameter."
+                    },
+                    {
+                        "name": "query",
+                        "in": "query",
+                        "description": "Search keywords to perform a text search on the fields: web_description, event_name and venue_name. 'AND' searches can be performed by wrapping query terms in quotes. If you do not specify a query, all results will be returned.\n"
+                    },
+                    {
+                        "name": "filter",
+                        "in": "query",
+                        "description": "Filters search results based on the facets provided.  For more information on the values you can filter on, see Facets.\n"
+                    },
+                    {
+                        "name": "date_range",
+                        "in": "query",
+                        "description": "Start date to end date in the following format- YYYY-MM-DD:YYYY-MM-DD"
+                    },
+                    {
+                        "name": "facets",
+                        "in": "query",
+                        "description": "When facets is set to 1, a count of all facets will be included in the response."
+                    },
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "description": "Sorts your results on the fields specified. <br\/> `sort_value1+[asc | desc],sort_value2+[asc|desc],[...]`<br\/> Appending +asc to a facet or response will sort results on that value in ascending order. Appending +desc to a facet or response  will sort results in descending order. You can sort on multiple fields. You can sort on any facet. For the list of responses you can sort on, see the Sortable Field column in the Response table. <br\/><br\/>If you are doing a spatial search with the ll paramete"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Limits the number of results returned"
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Sets the starting point of the result set"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An array of events"
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Event": {
+                "type": "object",
+                "properties": {
+                    "city": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "critic_name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "event_detail_url": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "event_id": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "event_name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "event_schedule_id": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "festival": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "film_rating": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "free": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "kid_friendly": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "last_chance": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "last_modified": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "long_running_show": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "previews_and_openings": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "recur_days": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "recurring_start_date": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "state": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "times_pick": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "web_description": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "recur_days": {
+                "type": "array"
+            }
+        }
+    }
+}
