@@ -1,0 +1,103 @@
+{
+    "id": "7aaf52c3901185e09eceee2f5dae18ab",
+    "name": "TimesTags",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "b6d8000ea8e08df3c06f65dd414423aa",
+            "name": "",
+            "url": "http:\/\/api.nytimes.com\/svc\/suggest\/v1\/timestags.json",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "query",
+                    "description": "Your search query",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "filter",
+                    "description": "If you do not specify a value for filter (see the Optional Parameters), your query will be matched to tags in all four Times dictionaries: subject, geographic location, organization and person. To use more than one, separate with commas.\n",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "max",
+                    "description": "Sets the maximum number of results",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7aaf52c3901185e09eceee2f5dae18ab",
+            "rawModeData": ""
+        },
+        {
+            "id": "7d23492604a19bebd55bb311232f0b26",
+            "name": "",
+            "url": "http:\/\/api.nytimes.com\/svc\/suggest\/v1\/timestags",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "query",
+                    "description": "Your search query",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "filter",
+                    "description": "If you do not specify a value for filter (see the Optional Parameters), your query will be matched to tags in all four Times dictionaries: subject, geographic location, organization and person. To use more than one, separate with commas.\n",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "max",
+                    "description": "Sets the maximum number of results",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7aaf52c3901185e09eceee2f5dae18ab",
+            "rawModeData": ""
+        }
+    ]
+}
