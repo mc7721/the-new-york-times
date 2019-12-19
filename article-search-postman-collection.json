@@ -1,0 +1,107 @@
+{
+    "id": "be70e4d0cdd4b3190f6e09c729171e2b",
+    "name": "Article Search",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "64b657d750ff9f96710dd53dd03235fb",
+            "name": "Article Search",
+            "url": "http:\/\/api.nytimes.com\/svc\/search\/v2\/articlesearch.json",
+            "description": "Article Search requests use the following URI structure:\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "q",
+                    "description": "Search query term. Search is performed on the article body, headline and byline.\n",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fq",
+                    "description": "\"Filtered search query using standard Lucene syntax. \n\nThe filter query can be specified with or without a limiting field: label. \n\nSee Filtering Your Search for more information about filtering.\"\n",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "begin_date",
+                    "description": "\"Format: YYYYMMDD \n\nRestricts responses to results with publication dates of the date specified or later.\"\n",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "end_date",
+                    "description": "\"Format: YYYYMMDD \n\nRestricts responses to results with publication dates of the date specified or earlier.\"\n",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort",
+                    "description": "\"By default, search results are sorted by their relevance to the query term (q). Use the sort parameter to sort by pub_date.\"\n",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fl",
+                    "description": "\"Comma-delimited list of fields (no limit)\n\n  Limits the fields returned in your search results. By default (unless you include an fl list in your request), the following fields are returned: \n  \n  web_url\n  \n  snippet\n  \n  lead_paragraph\n  \n  abstract\n  \n  print_page\n  \n  blog\n  \n  source\n  \n  multimedia\n  \n  headline\n  \n  keywords\n  \n  pub_date\n  \n  document_type\n  \n  news_desk\n  \n  byline\n  \n  type_of_material\n  \n  _id\n  \n  word_count\"\n",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "hl",
+                    "description": "Enables highlighting in search results. When set to true, the query term (q) is highlighted in the headline and lead_paragraph fields.\n\nNote: If highlighting is enabled, snippet will be returned even if it is not specified in your fl list.\"\n",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page",
+                    "description": "\"The value of page corresponds to a set of 10 results (it does not indicate the starting number of the result set). For example, page=0 corresponds to records 0-9. To return records 10-19, set page to 1, not 10.\"\n",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "facet_field",
+                    "description": "Comma-delimited list of facets\n\nSpecifies the sets of facet values to include in the facets array at the end of response, which collects the facet values from all the search results. By default no facet fields will be returned. Below is the list of valid facets:\n\nsection_name\n\ndocument_type\n\ntype_of_material\n\nsource\n\nday_of_week\n\nTo learn more about using facets, see Using Facets.\n",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "facet_filter",
+                    "description": "When set to true, facet counts will respect any applied filters (fq, date range, etc.) in addition to the main query term. To filter facet counts, specifying at least one facet_field is required. To learn more about using facets, see Using Facets.\n",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "be70e4d0cdd4b3190f6e09c729171e2b",
+            "rawModeData": ""
+        }
+    ]
+}
