@@ -1,0 +1,151 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "2.0.0",
+        "title": "Top Stories",
+        "description": "The Top Stories API provides lists of articles and associated images by section.",
+        "termsOfService": "http:\/\/developer.nytimes.com\/tou"
+    },
+    "servers": [
+        "http:\/\/api.nytimes.com\/svc\/topstories\/v2"
+    ],
+    "paths": {
+        "\/{section}.{format}": {
+            "get": {
+                "summary": "Top Stories",
+                "description": "The Top Stories API returns a list of articles and associated images currently on the specified section.  Support JSON and JSONP.\n",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "section",
+                        "in": "path",
+                        "description": "The section the story appears in."
+                    },
+                    {
+                        "name": "format",
+                        "in": "path",
+                        "description": "if this is JSONP or JSON"
+                    },
+                    {
+                        "name": "callback",
+                        "in": "query",
+                        "description": "The name of the function the API call results will be passed to. Required when using JSONP. This parameter has only one valid value per section. The format is {section_name}TopStoriesCallback.\n"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An array of articles"
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Article": {
+                "type": "object",
+                "properties": {
+                    "abstract": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "byline": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "created_date": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "des_facet": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "geo_facet": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "item_type": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "kicker": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "material_type_facet": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "multimedia": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "org_facet": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "per_facet": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "published_date": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "related_urls": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "section": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "short_url": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "subsection": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "thumbnail_standard": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "title": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "updated_date": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "url": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "des_facet": {
+                "type": "array"
+            },
+            "geo_facet": {
+                "type": "array"
+            },
+            "multimedia": {
+                "type": "array"
+            },
+            "org_facet": {
+                "type": "array"
+            },
+            "per_facet": {
+                "type": "array"
+            },
+            "related_urls": {
+                "type": "array"
+            }
+        }
+    }
+}
