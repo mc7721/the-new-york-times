@@ -1,0 +1,221 @@
+{
+    "id": "751c9b76a0b5f40116ffbf0e872f50af",
+    "name": "Community",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "76106505c3efbbcc77485be015fb5e05",
+            "name": "Comments by Date",
+            "url": "http:\/\/api.nytimes.com\/svc\/community\/v3\/user-content\/by-date.json",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "date",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "751c9b76a0b5f40116ffbf0e872f50af",
+            "rawModeData": ""
+        },
+        {
+            "id": "b7e42a2277a0aea09580071740509bc4",
+            "name": "",
+            "url": "http:\/\/api.nytimes.com\/svc\/community\/v3\/user-content\/by-date.json",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "parameters",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "751c9b76a0b5f40116ffbf0e872f50af",
+            "rawModeData": ""
+        },
+        {
+            "id": "22b16fbcea0665892b5b1d46bbaefee4",
+            "name": "Recent User Comments",
+            "url": "http:\/\/api.nytimes.com\/svc\/community\/v3\/user-content\/recent.json",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "751c9b76a0b5f40116ffbf0e872f50af",
+            "rawModeData": ""
+        },
+        {
+            "id": "8fa6074d8a98e9d74f2e1d602f1d9d7e",
+            "name": "",
+            "url": "http:\/\/api.nytimes.com\/svc\/community\/v3\/user-content\/recent.json",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "parameters",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "751c9b76a0b5f40116ffbf0e872f50af",
+            "rawModeData": ""
+        },
+        {
+            "id": "2c6fa1e693d7dd1c6ed0f201e8f35d88",
+            "name": "Comments by URL",
+            "url": "http:\/\/api.nytimes.com\/svc\/community\/v3\/user-content\/url.json",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "url",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "751c9b76a0b5f40116ffbf0e872f50af",
+            "rawModeData": ""
+        },
+        {
+            "id": "8936d764303a66105e2e03ac1c2b93e0",
+            "name": "",
+            "url": "http:\/\/api.nytimes.com\/svc\/community\/v3\/user-content\/url.json",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "parameters",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "751c9b76a0b5f40116ffbf0e872f50af",
+            "rawModeData": ""
+        },
+        {
+            "id": "26221ef753d311f6246d5c903a246102",
+            "name": "Comments by User",
+            "url": "http:\/\/api.nytimes.com\/svc\/community\/v3\/user-content\/user.json",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "userID",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "751c9b76a0b5f40116ffbf0e872f50af",
+            "rawModeData": ""
+        },
+        {
+            "id": "64c86f59fce34cb3e70efafd7a7042f9",
+            "name": "",
+            "url": "http:\/\/api.nytimes.com\/svc\/community\/v3\/user-content\/user.json",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "parameters",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "751c9b76a0b5f40116ffbf0e872f50af",
+            "rawModeData": ""
+        }
+    ]
+}
