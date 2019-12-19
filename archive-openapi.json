@@ -1,0 +1,143 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "Archive",
+        "description": "The Archive API provides lists of NYT articles by month going back to 1851.  You can use it to build your own local database of NYT article metadata.",
+        "termsOfService": "http:\/\/developer.nytimes.com\/tou"
+    },
+    "servers": [
+        "http:\/\/api.nytimes.com\/svc\/archive\/v1"
+    ],
+    "paths": {
+        "\/{year}\/{month}.json": {
+            "get": {
+                "summary": "Archive API",
+                "description": "The Archive API provides lists of NYT articles by month going back to 1851.  Simply pass in the year and month you want and it returns a JSON object with all articles for that month.\n",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "year",
+                        "in": "path",
+                        "description": "The year (e.g. 2016)."
+                    },
+                    {
+                        "name": "month",
+                        "in": "path",
+                        "description": "The month number (e.g. 1 for January)."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The docs requested."
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Doc": {
+                "type": "object",
+                "properties": {
+                    "_id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "abstract": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "blog": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "byline": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "document_type": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "headline": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "keywords": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "lead_paragraph": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "multimedia": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "news_desK": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "print_page": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "pub_date": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "section_name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "slideshow_credits": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "snippet": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "source": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "subsection_name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "type_of_material": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "web_url": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "word_count": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "blog": {
+                "type": "array"
+            },
+            "byline": {
+                "type": "object"
+            },
+            "headline": {
+                "type": "object"
+            },
+            "keywords": {
+                "type": "object"
+            },
+            "multimedia": {
+                "type": "array"
+            }
+        }
+    }
+}
