@@ -1,0 +1,119 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "3.0.0",
+        "title": "Community",
+        "description": "Get access to comments from registered users on New York Times articles.  NOTE: This API is deprecated.",
+        "termsOfService": "http:\/\/developer.nytimes.com\/tou"
+    },
+    "servers": [
+        "http:\/\/api.nytimes.com\/svc\/community\/v3"
+    ],
+    "paths": {
+        "\/user-content\/by-date.json": {
+            "get": {
+                "summary": "Comments by Date",
+                "description": "",
+                "operationId": "GETUserContentByDateJson",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "date",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "parameters": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/user-content\/recent.json": {
+            "get": {
+                "summary": "Recent User Comments",
+                "description": "",
+                "operationId": "GETUserContentRecentJson",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "parameters": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/user-content\/url.json": {
+            "get": {
+                "summary": "Comments by URL",
+                "description": "",
+                "operationId": "GETUserContentUrlJson",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "url",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "parameters": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/user-content\/user.json": {
+            "get": {
+                "summary": "Comments by User",
+                "description": "",
+                "operationId": "GETUserContentUserJson",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "userID",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "parameters": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            }
+        }
+    },
+    "components": {
+        "schemas": []
+    }
+}
