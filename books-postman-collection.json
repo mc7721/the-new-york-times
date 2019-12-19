@@ -1,0 +1,526 @@
+{
+    "id": "8cf45fb1640ce82ca450747b407ec932",
+    "name": "Books",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "000411437d844382a909314b4ffe66e1",
+            "name": "Best Seller List",
+            "url": "http:\/\/api.nytimes.com\/svc\/books\/v3\/lists.{format}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "list",
+                    "description": "The name of the Times best-seller list. To get valid values, use a list names request.\n\nBe sure to replace spaces with hyphens (e.g., e-book-fiction or hardcover-fiction, not E-Book Fiction or Hardcover Fiction). (The parameter is not case sensitive.)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "weeks-on-list",
+                    "description": "The number of weeks that the best seller has been on list-name, as of bestsellers-date",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "bestsellers-date",
+                    "description": "YYYY-MM-DD\n\nThe week-ending date for the sales reflected on list-name. Times best-seller lists are compiled using available book sale data. The bestsellers-date may be significantly earlier than published-date. For additional information, see the explanation at the bottom of any best-seller list page on NYTimes.com (example: Hardcover Fiction, published Dec. 5 but reflecting sales to Nov. 29).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "date",
+                    "description": "YYYY-MM-DD  The date the best-seller list was published on NYTimes.com (compare bestsellers-date)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "isbn",
+                    "description": "International Standard Book Number, 10 or 13 digits",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "published-date",
+                    "description": "YYYY-MM-DD\n\nThe date the best-seller list was published on NYTimes.com (compare bestsellers-date)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "rank",
+                    "description": "The rank of the best seller on list-name as of bestsellers-date",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "rank-last-week",
+                    "description": "The rank of the best seller on list-name one week prior to bestsellers-date",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "Sets the starting point of the result set",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort-order",
+                    "description": "Sets the sort order of the result set",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "8cf45fb1640ce82ca450747b407ec932",
+            "rawModeData": ""
+        },
+        {
+            "id": "d75efd335ac314b9887febcd3c57cbef",
+            "name": "",
+            "url": "http:\/\/api.nytimes.com\/svc\/books\/v3\/lists.{format}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "parameters",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "8cf45fb1640ce82ca450747b407ec932",
+            "rawModeData": ""
+        },
+        {
+            "id": "d72cf60a635f1d4c2785ed3072b6b36e",
+            "name": "Best Seller History List",
+            "url": "http:\/\/api.nytimes.com\/svc\/books\/v3\/lists\/best-sellers\/history.json",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "age-group",
+                    "description": "The target age group for the best seller.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "author",
+                    "description": "The author of the best seller. The author field does not include additional contributors (see Data Structure for more details about the author and contributor fields).\n\nWhen searching the author field, you can specify any combination of first, middle and last names.\n\nWhen sort-by is set to author, the results will be sorted by author's first name. ",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "contributor",
+                    "description": "The author of the best seller, as well as other contributors such as the illustrator (to search or sort by author name only, use author instead).\n\nWhen searching, you can specify any combination of first, middle and last names of any of the contributors.\n\nWhen sort-by is set to contributor, the results will be sorted by the first name of the first contributor listed. ",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "isbn",
+                    "description": "International Standard Book Number, 10 or 13 digits",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "price",
+                    "description": "The publisher's list price of the best seller, including decimal point",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "publisher",
+                    "description": "The standardized name of the publisher",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "title",
+                    "description": "The title of the best seller\n\nWhen searching, you can specify a portion of a title or a full title.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "8cf45fb1640ce82ca450747b407ec932",
+            "rawModeData": ""
+        },
+        {
+            "id": "f02f99ca658e3122fffcf712331e4753",
+            "name": "",
+            "url": "http:\/\/api.nytimes.com\/svc\/books\/v3\/lists\/best-sellers\/history.json",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "parameters",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "8cf45fb1640ce82ca450747b407ec932",
+            "rawModeData": ""
+        },
+        {
+            "id": "3ea3f9e0afdc6f654b7ededce4ffd1ba",
+            "name": "Best Seller List Names",
+            "url": "http:\/\/api.nytimes.com\/svc\/books\/v3\/lists\/names.{format}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "api-key",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "8cf45fb1640ce82ca450747b407ec932",
+            "rawModeData": ""
+        },
+        {
+            "id": "219265edf46fc2aaac8d38822dbbb7f6",
+            "name": "",
+            "url": "http:\/\/api.nytimes.com\/svc\/books\/v3\/lists\/names.{format}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "parameters",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "8cf45fb1640ce82ca450747b407ec932",
+            "rawModeData": ""
+        },
+        {
+            "id": "98bf337221e6bf0350fac2809529236c",
+            "name": "Best Seller List Overview",
+            "url": "http:\/\/api.nytimes.com\/svc\/books\/v3\/lists\/overview.{format}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "published_date",
+                    "description": "The best-seller list publication date. YYYY-MM-DD\n\nYou do not have to specify the exact date the list was published. The service will search forward (into the future) for the closest publication date to the date you specify. For example, a request for lists\/overview\/2013-05-22 will retrieve the list that was published on 05-26.\n\nIf you do not include a published_date, the current week's best-sellers lists will be returned.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "api-key",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "8cf45fb1640ce82ca450747b407ec932",
+            "rawModeData": ""
+        },
+        {
+            "id": "dcf3692ce1e9d5cc51260e4f6f513e30",
+            "name": "",
+            "url": "http:\/\/api.nytimes.com\/svc\/books\/v3\/lists\/overview.{format}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "parameters",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "8cf45fb1640ce82ca450747b407ec932",
+            "rawModeData": ""
+        },
+        {
+            "id": "fc9a0102cad46d2d63ceaa2d19976561",
+            "name": "Best Seller List by Date",
+            "url": "http:\/\/api.nytimes.com\/svc\/books\/v3\/lists\/{date}\/{list}.json",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "isbn",
+                    "description": "International Standard Book Number, 10 or 13 digits",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "list-name",
+                    "description": "The name of the Times best-seller list. To get valid values, use a list names request.\n\nBe sure to replace spaces with hyphens (e.g., e-book-fiction or hardcover-fiction, not E-Book Fiction or Hardcover Fiction). (The parameter is not case sensitive.)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "published-date",
+                    "description": "YYYY-MM-DD\n\nThe date the best-seller list was published on NYTimes.com (compare bestsellers-date)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "bestsellers-date",
+                    "description": "YYYY-MM-DD\n\nThe week-ending date for the sales reflected on list-name. Times best-seller lists are compiled using available book sale data. The bestsellers-date may be significantly earlier than published-date. For additional information, see the explanation at the bottom of any best-seller list page on NYTimes.com (example: Hardcover Fiction, published Dec. 5 but reflecting sales to Nov. 29).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "weeks-on-list",
+                    "description": "The number of weeks that the best seller has been on list-name, as of bestsellers-date",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "rank",
+                    "description": "The rank of the best seller on list-name as of bestsellers-date",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "rank-last-week",
+                    "description": "The rank of the best seller on list-name one week prior to bestsellers-date",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "Sets the starting point of the result set",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort-order",
+                    "description": "Sets the sort order of the result set",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "8cf45fb1640ce82ca450747b407ec932",
+            "rawModeData": ""
+        },
+        {
+            "id": "d4c518377c2fe71cca28b219aa127168",
+            "name": "",
+            "url": "http:\/\/api.nytimes.com\/svc\/books\/v3\/lists\/{date}\/{list}.json",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "parameters",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "8cf45fb1640ce82ca450747b407ec932",
+            "rawModeData": ""
+        },
+        {
+            "id": "880fc6e48708199f1b5751867bfedf10",
+            "name": "Reviews",
+            "url": "http:\/\/api.nytimes.com\/svc\/books\/v3\/reviews.{format}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "isbn",
+                    "description": "International Standard Book Number, 10 or 13 digits",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "title",
+                    "description": "The title of the best seller\n\nWhen searching, you can specify a portion of a title or a full title.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "author",
+                    "description": "The author of the best seller. The author field does not include additional contributors (see Data Structure for more details about the author and contributor fields).\n\nWhen searching the author field, you can specify any combination of first, middle and last names.\n\nWhen sort-by is set to author, the results will be sorted by author's first name. ",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "api-key",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "8cf45fb1640ce82ca450747b407ec932",
+            "rawModeData": ""
+        },
+        {
+            "id": "1f6cccacfc8834413c8cb7a17e777722",
+            "name": "",
+            "url": "http:\/\/api.nytimes.com\/svc\/books\/v3\/reviews.{format}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "parameters",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "8cf45fb1640ce82ca450747b407ec932",
+            "rawModeData": ""
+        }
+    ]
+}
