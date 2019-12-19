@@ -1,0 +1,150 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "2.0.0",
+        "title": "Most Popular",
+        "description": "Get lists of NYT Articles based on shares, emails, and views.",
+        "termsOfService": "http:\/\/developer.nytimes.com\/tou"
+    },
+    "servers": [
+        "http:\/\/api.nytimes.com\/svc\/mostpopular\/v2"
+    ],
+    "paths": [],
+    "components": {
+        "schemas": {
+            "Article": {
+                "type": "object",
+                "properties": {
+                    "abstract": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "byline": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "column": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "des_facet": {
+                        "description": "Reference",
+                        "type": "object"
+                    },
+                    "geo_facet": {
+                        "description": "Reference",
+                        "type": "object"
+                    },
+                    "media": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "org_facet": {
+                        "description": "Reference",
+                        "type": "object"
+                    },
+                    "per_facet": {
+                        "description": "Reference",
+                        "type": "object"
+                    },
+                    "published_date": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "section": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "source": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "title": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "url": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "des_facet": {
+                "type": "object"
+            },
+            "geo_facet": {
+                "type": "object"
+            },
+            "media": {
+                "type": "array"
+            },
+            "org_facet": {
+                "type": "object"
+            },
+            "per_facet": {
+                "type": "object"
+            },
+            "ArticleWithCountType": {
+                "type": "object",
+                "properties": {
+                    "abstract": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "byline": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "column": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "count_type": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "des_facet": {
+                        "description": "Reference",
+                        "type": "object"
+                    },
+                    "geo_facet": {
+                        "description": "Reference",
+                        "type": "object"
+                    },
+                    "media": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "org_facet": {
+                        "description": "Reference",
+                        "type": "object"
+                    },
+                    "per_facet": {
+                        "description": "Reference",
+                        "type": "object"
+                    },
+                    "published_date": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "section": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "source": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "title": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "url": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}
