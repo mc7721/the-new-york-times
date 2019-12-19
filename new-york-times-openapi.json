@@ -1,0 +1,1043 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "2.0.0",
+        "title": "New York Times",
+        "description": "You already know that NYTimes.com is an unparalleled source of news and information. But now it's a premier source of data, too ??? why just read the news when you can hack it?",
+        "termsOfService": "https:\/\/developer.nytimes.com\/tou"
+    },
+    "servers": [
+        "httpsapi.nytimes.com\/svc"
+    ],
+    "paths": {
+        "\/topstories\/v2\/{section}.{format}": {
+            "get": {
+                "summary": "Top Stories",
+                "description": "The Top Stories API returns a list of articles and associated images currently on the specified section.  Support JSON and JSONP.\n",
+                "operationId": "TheTopStoriesApiReturnsAListOfArticlesAndAssociatedImagesCurrentlyOnTheSpecifiedSect",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "section",
+                        "in": "path",
+                        "description": "The section the story appears in."
+                    },
+                    {
+                        "name": "format",
+                        "in": "path",
+                        "description": "if this is JSONP or JSON"
+                    },
+                    {
+                        "name": "callback",
+                        "in": "query",
+                        "description": "The name of the function the API call results will be passed to. Required when using JSONP. This parameter has only one valid value per section. The format is {section_name}TopStoriesCallback.\n"
+                    }
+                ]
+            }
+        },
+        "\/search\/v2\/articlesearch.json": {
+            "get": {
+                "summary": "Article Search",
+                "description": "Article SearchWith the Article Search API, you can search New York Times articles from Sept. 18, 1851 to today, retrieving headlines, abstracts, lead paragraphs, links to associated multimedia and other article.",
+                "operationId": "ArticleSearchRequestsUseTheFollowingUriStructure",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "q",
+                        "in": "query",
+                        "description": "Search query term. Search is performed on the article body, headline and byline.\n"
+                    },
+                    {
+                        "name": "fq",
+                        "in": "query",
+                        "description": "\"Filtered search query using standard Lucene syntax. \n\nThe filter query can be specified with or without a limiting field: label. \n\nSee Filtering Your Search for more information about filtering.\"\n"
+                    },
+                    {
+                        "name": "begin_date",
+                        "in": "query",
+                        "description": "\"Format: YYYYMMDD \n\nRestricts responses to results with publication dates of the date specified or later.\"\n"
+                    },
+                    {
+                        "name": "end_date",
+                        "in": "query",
+                        "description": "\"Format: YYYYMMDD \n\nRestricts responses to results with publication dates of the date specified or earlier.\"\n"
+                    },
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "description": "\"By default, search results are sorted by their relevance to the query term (q). Use the sort parameter to sort by pub_date.\"\n"
+                    },
+                    {
+                        "name": "fl",
+                        "in": "query",
+                        "description": "\"Comma-delimited list of fields (no limit)\n\n  Limits the fields returned in your search results. By default (unless you include an fl list in your request), the following fields are returned: \n  \n  web_url\n  \n  snippet\n  \n  lead_paragraph\n  \n  abstract\n  \n  print_page\n  \n  blog\n  \n  source\n  \n  multimedia\n  \n  headline\n  \n  keywords\n  \n  pub_date\n  \n  document_type\n  \n  news_desk\n  \n  byline\n  \n  type_of_material\n  \n  _id\n  \n  word_count\"\n"
+                    },
+                    {
+                        "name": "hl",
+                        "in": "query",
+                        "description": "Enables highlighting in search results. When set to true, the query term (q) is highlighted in the headline and lead_paragraph fields.\n\nNote: If highlighting is enabled, snippet will be returned even if it is not specified in your fl list.\"\n"
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "\"The value of page corresponds to a set of 10 results (it does not indicate the starting number of the result set). For example, page=0 corresponds to records 0-9. To return records 10-19, set page to 1, not 10.\"\n"
+                    },
+                    {
+                        "name": "facet_field",
+                        "in": "query",
+                        "description": "Comma-delimited list of facets\n\nSpecifies the sets of facet values to include in the facets array at the end of response, which collects the facet values from all the search results. By default no facet fields will be returned. Below is the list of valid facets:\n\nsection_name\n\ndocument_type\n\ntype_of_material\n\nsource\n\nday_of_week\n\nTo learn more about using facets, see Using Facets.\n"
+                    },
+                    {
+                        "name": "facet_filter",
+                        "in": "query",
+                        "description": "When set to true, facet counts will respect any applied filters (fq, date range, etc.) in addition to the main query term. To filter facet counts, specifying at least one facet_field is required. To learn more about using facets, see Using Facets.\n"
+                    },
+                    {
+                        "name": "api",
+                        "in": "query",
+                        "description": "The API key."
+                    }
+                ]
+            }
+        },
+        "\/books\/v2\/lists\/best-sellers\/history.json": {
+            "get": {
+                "summary": "Best Seller History List",
+                "description": "The Best Sellers history service returns books and their history on the NYT Best Sellers lists.",
+                "operationId": "GETListsBestSellersHistoryJson",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "age",
+                        "in": "query",
+                        "description": "The target age group for the best seller."
+                    },
+                    {
+                        "name": "author",
+                        "in": "query",
+                        "description": "The author of the best seller. The author field does not include additional contributors (see Data Structure for more details about the author and contributor fields).\n\nWhen searching the author field, you can specify any combination of first, middle and last names.\n\nWhen sort-by is set to author, the results will be sorted by author's first name. "
+                    },
+                    {
+                        "name": "contributor",
+                        "in": "query",
+                        "description": "The author of the best seller, as well as other contributors such as the illustrator (to search or sort by author name only, use author instead).\n\nWhen searching, you can specify any combination of first, middle and last names of any of the contributors.\n\nWhen sort-by is set to contributor, the results will be sorted by the first name of the first contributor listed. "
+                    },
+                    {
+                        "name": "isbn",
+                        "in": "query",
+                        "description": "International Standard Book Number, 10 or 13 digits\n\nA best seller may have both 10-digit and 13-digit ISBNs, and may have multiple ISBNs of each type. To search on multiple ISBNs, separate the ISBNs with semicolons (example: 9780446579933;0061374229)."
+                    },
+                    {
+                        "name": "price",
+                        "in": "query",
+                        "description": "The publisher's list price of the best seller, including decimal point"
+                    },
+                    {
+                        "name": "publisher",
+                        "in": "query",
+                        "description": "The standardized name of the publisher"
+                    },
+                    {
+                        "name": "title",
+                        "in": "query",
+                        "description": "The title of the best seller\n\nWhen searching, you can specify a portion of a title or a full title."
+                    }
+                ]
+            }
+        },
+        "\/books\/v2\/lists.{format}": {
+            "get": {
+                "summary": "Best Seller List",
+                "description": "The Books API has services for getting information about The New York Times Best Sellers Lists and Book Reviews.",
+                "operationId": "GETListsFormat",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "list",
+                        "in": "query",
+                        "description": "The name of the Times best-seller list. To get valid values, use a list names request.\n\nBe sure to replace spaces with hyphens (e.g., e-book-fiction or hardcover-fiction, not E-Book Fiction or Hardcover Fiction). (The parameter is not case sensitive.)"
+                    },
+                    {
+                        "name": "weeks",
+                        "in": "query",
+                        "description": "The number of weeks that the best seller has been on list-name, as of bestsellers-date"
+                    },
+                    {
+                        "name": "bestsellers",
+                        "in": "query",
+                        "description": "YYYY-MM-DD\n\nThe week-ending date for the sales reflected on list-name. Times best-seller lists are compiled using available book sale data. The bestsellers-date may be significantly earlier than published-date. For additional information, see the explanation at the bottom of any best-seller list page on NYTimes.com (example: Hardcover Fiction, published Dec. 5 but reflecting sales to Nov. 29)."
+                    },
+                    {
+                        "name": "date",
+                        "in": "query",
+                        "description": "YYYY-MM-DD  The date the best-seller list was published on NYTimes.com (compare bestsellers-date)"
+                    },
+                    {
+                        "name": "isbn",
+                        "in": "query",
+                        "description": "International Standard Book Number, 10 or 13 digits\n\nA best seller may have both 10-digit and 13-digit ISBNs, and may have multiple ISBNs of each type. To search on multiple ISBNs, separate the ISBNs with semicolons (example: 9780446579933;0061374229)."
+                    },
+                    {
+                        "name": "published",
+                        "in": "query",
+                        "description": "YYYY-MM-DD\n\nThe date the best-seller list was published on NYTimes.com (compare bestsellers-date)"
+                    },
+                    {
+                        "name": "rank",
+                        "in": "query",
+                        "description": "The rank of the best seller on list-name as of bestsellers-date"
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Sets the starting point of the result set"
+                    },
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "description": "\"By default, search results are sorted by their relevance to the query term (q). Use the sort parameter to sort by pub_date.\"\n"
+                    },
+                    {
+                        "name": "format",
+                        "in": "path",
+                        "description": "if this is JSONP or JSON"
+                    }
+                ]
+            }
+        },
+        "\/books\/v2\/lists\/{date}\/{list}.json": {
+            "get": {
+                "summary": "Best Seller List by Date",
+                "description": "You can optionally request an overview for a specific published date using the published_date query parameter.",
+                "operationId": "GETListsDateListJson",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "isbn",
+                        "in": "query",
+                        "description": "International Standard Book Number, 10 or 13 digits\n\nA best seller may have both 10-digit and 13-digit ISBNs, and may have multiple ISBNs of each type. To search on multiple ISBNs, separate the ISBNs with semicolons (example: 9780446579933;0061374229)."
+                    },
+                    {
+                        "name": "list",
+                        "in": "query",
+                        "description": "The name of the Times best-seller list. To get valid values, use a list names request.\n\nBe sure to replace spaces with hyphens (e.g., e-book-fiction or hardcover-fiction, not E-Book Fiction or Hardcover Fiction). (The parameter is not case sensitive.)"
+                    },
+                    {
+                        "name": "published",
+                        "in": "query",
+                        "description": "YYYY-MM-DD\n\nThe date the best-seller list was published on NYTimes.com (compare bestsellers-date)"
+                    },
+                    {
+                        "name": "bestsellers",
+                        "in": "query",
+                        "description": "YYYY-MM-DD\n\nThe week-ending date for the sales reflected on list-name. Times best-seller lists are compiled using available book sale data. The bestsellers-date may be significantly earlier than published-date. For additional information, see the explanation at the bottom of any best-seller list page on NYTimes.com (example: Hardcover Fiction, published Dec. 5 but reflecting sales to Nov. 29)."
+                    },
+                    {
+                        "name": "weeks",
+                        "in": "query",
+                        "description": "The number of weeks that the best seller has been on list-name, as of bestsellers-date"
+                    },
+                    {
+                        "name": "rank",
+                        "in": "query",
+                        "description": "The rank of the best seller on list-name as of bestsellers-date"
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Sets the starting point of the result set"
+                    },
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "description": "\"By default, search results are sorted by their relevance to the query term (q). Use the sort parameter to sort by pub_date.\"\n"
+                    },
+                    {
+                        "name": "api",
+                        "in": "query",
+                        "description": "The API key."
+                    }
+                ]
+            }
+        },
+        "\/books\/v2\/lists\/overview.{format}": {
+            "get": {
+                "summary": "Best Seller List Overview",
+                "description": "The overview service returns the top 5 books for all the Best Sellers lists.",
+                "operationId": "GETListsOverviewFormat",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "published_date",
+                        "in": "query",
+                        "description": "The best-seller list publication date. YYYY-MM-DD\n\nYou do not have to specify the exact date the list was published. The service will search forward (into the future) for the closest publication date to the date you specify. For example, a request for lists\/overview\/2013-05-22 will retrieve the list that was published on 05-26.\n\nIf you do not include a published_date, the current week's best-sellers lists will be returned."
+                    },
+                    {
+                        "name": "api",
+                        "in": "query",
+                        "description": "The API key."
+                    },
+                    {
+                        "name": "format",
+                        "in": "query",
+                        "description": "The format."
+                    }
+                ]
+            }
+        },
+        "\/books\/v2\/lists\/names.{format}": {
+            "get": {
+                "summary": "Best Seller List Names",
+                "description": "The names service returns a list of Best Sellers list names. It includes in the response the type of list (weekly or monthly) and when it was first published and last published. Lists have been added and removed over time. For example the Food and Diet list was added in 2013 and the Children???s Chapter Books list was removed in 2012. The response also includes the list_name_encoded which you use when calling the details service.",
+                "operationId": "GETListsNamesFormat",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "api",
+                        "in": "query",
+                        "description": "The API key."
+                    },
+                    {
+                        "name": "format",
+                        "in": "query",
+                        "description": "The format."
+                    }
+                ]
+            }
+        },
+        "\/query.json": {
+            "get": {
+                "summary": "Geographic API",
+                "description": "The Geographic API extends the Semantic API, using a linked data approach to enhance location concepts used in The New York Times' controlled vocabulary and data resources which combine them with the GeoNames database, an authoritative and free to use database of global geographical places, names and features.",
+                "operationId": "GeographicApi",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "query",
+                        "description": "A displayable name for the specified place."
+                    },
+                    {
+                        "name": "latitude",
+                        "in": "query",
+                        "description": "The latitude of the specified place.\n"
+                    },
+                    {
+                        "name": "longitude",
+                        "in": "query",
+                        "description": "The longitude of the specified place."
+                    },
+                    {
+                        "name": "elevation",
+                        "in": "query",
+                        "description": "The elevation of the specified place, in meters."
+                    },
+                    {
+                        "name": "sw",
+                        "in": "query",
+                        "description": "Along with ne, forms a bounded box using the longitude and latitude coordinates specified as the southwest corner. The search results are limited to the resulting box. Two float values, separated by a comma `latitude,longitude` <br\/> The ne parameter is required to use this parameter."
+                    },
+                    {
+                        "name": "query",
+                        "in": "query",
+                        "description": "Search keywords to perform a text search on the fields: web_description, event_name and venue_name. 'AND' searches can be performed by wrapping query terms in quotes. If you do not specify a query, all results will be returned.\n"
+                    },
+                    {
+                        "name": "filter",
+                        "in": "query",
+                        "description": "Filters search results based on the facets provided.  For more information on the values you can filter on, see Facets.\n"
+                    },
+                    {
+                        "name": "date_range",
+                        "in": "query",
+                        "description": "Start date to end date in the following format- YYYY-MM-DD:YYYY-MM-DD"
+                    },
+                    {
+                        "name": "facets",
+                        "in": "query",
+                        "description": "When facets is set to 1, a count of all facets will be included in the response."
+                    },
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "description": "\"By default, search results are sorted by their relevance to the query term (q). Use the sort parameter to sort by pub_date.\"\n"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Limits the number of results returned"
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Sets the starting point of the result set"
+                    }
+                ]
+            }
+        },
+        "\/mostpopular\/v2\/mostshared\/{section}\/{time-period}.json": {
+            "get": {
+                "summary": "Most Shared by Section & Time Period",
+                "description": "With the Most Popular API, you can get links and metadata for the blog posts and articles that are most frequently e-mailed, shared and viewed by NYTimes.co",
+                "operationId": "GETMostsharedSectionTimePeriodJson",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "section",
+                        "in": "path",
+                        "description": "The section the story appears in."
+                    },
+                    {
+                        "name": "time",
+                        "in": "path",
+                        "description": "The period of time."
+                    }
+                ]
+            }
+        },
+        "\/mostpopular\/v2\/mostemailed\/{section}\/{time-period}.json": {
+            "get": {
+                "summary": "Most Emailed by Section & Time Period",
+                "description": "With the Most Popular API, you can get links and metadata for the blog posts and articles that are most frequently e-mailed, shared and viewed by NYTimes.co",
+                "operationId": "GETMostemailedSectionTimePeriodJson",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "section",
+                        "in": "path",
+                        "description": "The section the story appears in."
+                    },
+                    {
+                        "name": "time",
+                        "in": "path",
+                        "description": "The period of time."
+                    }
+                ]
+            }
+        },
+        "\/mostpopular\/v2\/mostviewed\/{section}\/{time-period}.json": {
+            "get": {
+                "summary": "Most Viewed by Section & Time Period",
+                "description": "With the Most Popular API, you can get links and metadata for the blog posts and articles that are most frequently e-mailed, shared and viewed by NYTimes.co",
+                "operationId": "GETMostviewedSectionTimePeriodJson",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "section",
+                        "in": "path",
+                        "description": "The section the story appears in."
+                    },
+                    {
+                        "name": "time",
+                        "in": "path",
+                        "description": "The period of time."
+                    }
+                ]
+            }
+        },
+        "\/movies\/v2\/reviews\/search.json": {
+            "get": {
+                "summary": "Movie Review Search",
+                "description": "With the Movie Reviews API, you can search New York Times movie reviews by keyword and get lists of NYT Critics' Picks.",
+                "operationId": "GetMoveReviews",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "query",
+                        "in": "query",
+                        "description": "Search keywords to perform a text search on the fields: web_description, event_name and venue_name. 'AND' searches can be performed by wrapping query terms in quotes. If you do not specify a query, all results will be returned.\n"
+                    },
+                    {
+                        "name": "critics",
+                        "in": "query",
+                        "description": "Set this parameter to Y to limit the results to NYT Critics' Picks. To get only those movies that have not been highlighted by Times critics, specify critics-pick=N. (To get all reviews regardless of critics-pick status, simply omit this parameter.)\n"
+                    },
+                    {
+                        "name": "reviewer",
+                        "in": "query",
+                        "description": "Include this parameter to limit your results to reviews by a specific critic. Reviewer names should be formatted like this: Manohla Dargis.\n"
+                    },
+                    {
+                        "name": "publication",
+                        "in": "query",
+                        "description": "Single date: YYYY-MM-DD\n\nStart and end date: YYYY-MM-DD;YYYY-MM-DD\n\nThe publication-date is the date the review was first published in The Times.\n"
+                    },
+                    {
+                        "name": "opening",
+                        "in": "query",
+                        "description": "Single date: YYYY-MM-DD\n\nStart and end date: YYYY-MM-DD;YYYY-MM-DD\n\nThe opening-date is the date the movie's opening date in the New York region.\n"
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Sets the starting point of the result set"
+                    },
+                    {
+                        "name": "order",
+                        "in": "query",
+                        "description": "Sets the sort order of the results.\n\nResults ordered by-title are in ascending alphabetical order. Results ordered by one of the date parameters are in reverse chronological order.\n\nIf you do not specify a sort order, the results will be ordered by publication-date.\n"
+                    }
+                ]
+            }
+        },
+        "\/name\/{concept-type}\/{specific-concept}.json": {
+            "get": {
+                "summary": "The Semantic API",
+                "description": "The Semantic API complements the Articles API. With the Semantic API, you get access to the long list of people, places, organizations and other locations, entities and descriptors that make up the controlled vocabulary used as metadata by The New York Times (sometimes referred to as Times Tags and used for Times Topics pages.",
+                "operationId": "GetSemantics",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "concept",
+                        "in": "path",
+                        "description": "The type of the concept, used for Constructing a Semantic API Request by Concept Type and Specific Concept Name. The parameter is defined as a name-value pair, as in \"concept_type=[nytd_geo|nytd_per|nytd_org|nytd_des]\".\n"
+                    },
+                    {
+                        "name": "specific",
+                        "in": "path",
+                        "description": "The name of the concept, used for Constructing a Semantic API Request by Concept Type and Specific Concept Name. The parameter is defined in the URI path, as the element immediately preceding \".json\" like with \"Baseball.json\".\n"
+                    },
+                    {
+                        "name": "fields",
+                        "in": "query",
+                        "description": "\"all\" or comma-separated list of specific optional fields: pages, ticker_symbol, links, taxonomy, combinations, geocodes, article_list, scope_notes, search_api_query\n\nOptional fields are returned in result_set. They are briefly explained here:\n\npages: A list of topic pages associated with a specific concept.\nticker_symbol: If this concept is a publicly traded company, this field contains the ticker symbol.\nlinks: A list of links from this concept to external data resources.\ntaxonomy: For descrip"
+                    },
+                    {
+                        "name": "query",
+                        "in": "query",
+                        "description": "Search keywords to perform a text search on the fields: web_description, event_name and venue_name. 'AND' searches can be performed by wrapping query terms in quotes. If you do not specify a query, all results will be returned.\n"
+                    }
+                ]
+            }
+        },
+        "\/timestags": {
+            "get": {
+                "summary": "Times Tag",
+                "description": "With the TimesTags API, you can mine the riches of the New York Times tag set. The TimesTags service matches your query to the controlled vocabularies that fuel NYTimes.com metadata. You supply a string of characters, and the service returns a ranked list of suggested terms.",
+                "operationId": "GetTimesTag",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "query",
+                        "in": "query",
+                        "description": "Search keywords to perform a text search on the fields: web_description, event_name and venue_name. 'AND' searches can be performed by wrapping query terms in quotes. If you do not specify a query, all results will be returned.\n"
+                    },
+                    {
+                        "name": "filter",
+                        "in": "query",
+                        "description": "Filters search results based on the facets provided.  For more information on the values you can filter on, see Facets.\n"
+                    },
+                    {
+                        "name": "max",
+                        "in": "query",
+                        "description": "Sets the maximum number of results"
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Article": {
+                "type": "object",
+                "properties": {
+                    "section": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "subsection": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "title": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "abstract": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "url": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "thumbnail_standard": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "short_url": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "byline": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "item_type": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "updated_date": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "created_date": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "published_date": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "material_type_facet": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "kicker": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "des_facet": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "org_facet": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "per_facet": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "geo_facet": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "multimedia": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "related_urls": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "column": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "source": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "media": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "headline": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "blog_name": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Doc": {
+                "type": "object",
+                "properties": {
+                    "web_url": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "snippet": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "lead_paragraph": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "abstract": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "print_page": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "blog": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "source": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "headline": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "keywords": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "pub_date": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "document_type": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "news_desK": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "section_name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "subsection_name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "byline": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "type_of_material": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "_id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "word_count": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "slideshow_credits": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "multimedia": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Event": {
+                "type": "object",
+                "properties": {
+                    "event_id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "event_schedule_id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "last_modified": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "event_name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "event_detail_url": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "web_description": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "city": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "state": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "film_rating": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "critic_name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "times_pick": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "free": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "kid_friendly": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "last_chance": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "festival": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "long_running_show": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "previews_and_openings": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "recurring_start_date": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "recur_days": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "ArticleWithCountType": {
+                "type": "object",
+                "properties": {
+                    "url": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "count_type": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "column": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "section": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "byline": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "title": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "abstract": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "published_date": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "source": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "media": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Movie": {
+                "type": "object",
+                "properties": {
+                    "display_title": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "mpaa_rating": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "critics_pick": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "byline": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "headline": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "summary_short": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "publication_date": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "opening_date": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "date_updated": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "link": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "multimedia": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Critic": {
+                "type": "object",
+                "properties": {
+                    "display_name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "sort_name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "bio": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "seo_name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "multimedia": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Concept": {
+                "type": "object",
+                "properties": {
+                    "concept_id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "concept_name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "is_times_tag": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "concept_status": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "vernacular": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "concept_type": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "concept_created": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "concept_updated": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "taxonomy": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "links": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "search_api_query": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "article_list": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "scope_notes": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "combinations": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ancestors": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "descendants": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "ConceptRelation": {
+                "type": "object",
+                "properties": {
+                    "concept_id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "concept_name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "is_times_tag": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "concept_status": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "vernacular": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "concept_type": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "concept_created": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "concept_updated": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            }
+        }
+    }
+}
