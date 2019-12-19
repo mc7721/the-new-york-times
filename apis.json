@@ -1,0 +1,536 @@
+{
+    "name": "The New York Times",
+    "description": "The New York Times: Find breaking news, multimedia, reviews & opinion on Washington, business, sports, movies, travel, books, jobs, education, real estate, cars & more at nytimes.com.",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/18820-new-york-times.jpg",
+    "tags": [
+        "api provider",
+        "general data",
+        "have api",
+        "have swagger",
+        "historical data api",
+        "news",
+        "pedestal",
+        "relative data",
+        "service api",
+        "streams"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/the-new-york-times\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "Article Search API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/18820-new-york-times.jpg",
+            "humanURL": "http:\/\/nytimes.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/article-search-api.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/article-search-api-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/article-search-api-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "Archive",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/18820-new-york-times.jpg",
+            "humanURL": "http:\/\/nytimes.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/archive.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/archive-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/archive-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "Community",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/18820-new-york-times.jpg",
+            "humanURL": "http:\/\/nytimes.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/community.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/community-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/community-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "The Most Popular API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/18820-new-york-times.jpg",
+            "humanURL": "http:\/\/nytimes.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/the-most-popular-api.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/the-most-popular-api-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/the-most-popular-api-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "Article Search",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/18820-new-york-times.jpg",
+            "humanURL": "http:\/\/nytimes.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/article-search.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/article-search-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/article-search-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "Semantic",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/18820-new-york-times.jpg",
+            "humanURL": "http:\/\/nytimes.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/semantic.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/semantic-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/semantic-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "Geographic",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/18820-new-york-times.jpg",
+            "humanURL": "http:\/\/nytimes.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/geographic.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/geographic-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/geographic-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "Top Stories",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/18820-new-york-times.jpg",
+            "humanURL": "http:\/\/nytimes.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/top-stories.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/top-stories-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/top-stories-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "Semantic API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/18820-new-york-times.jpg",
+            "humanURL": "http:\/\/nytimes.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/semantic-api.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/semantic-api-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/semantic-api-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "New York Times",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/18820-new-york-times.jpg",
+            "humanURL": "http:\/\/nytimes.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/new-york-times.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/new-york-times-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/new-york-times-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "TimesTags",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/18820-new-york-times.jpg",
+            "humanURL": "http:\/\/nytimes.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/timestags.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/timestags-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/timestags-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "Books",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/18820-new-york-times.jpg",
+            "humanURL": "http:\/\/nytimes.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/books.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/books-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/books-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "Most Popular",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/18820-new-york-times.jpg",
+            "humanURL": "http:\/\/nytimes.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/most-popular.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/most-popular-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/most-popular-postman-collection.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Application Gallery",
+            "url": "http:\/\/developer.nytimes.com\/gallery"
+        },
+        {
+            "type": "Application Management",
+            "url": "http:\/\/developer.nytimes.com\/apps\/mykeys"
+        },
+        {
+            "type": "Base",
+            "url": "http:\/\/api.nytimes.com"
+        },
+        {
+            "type": "Curated Source",
+            "url": "http:\/\/bits.blogs.nytimes.com\/2016\/01\/27\/lyft-agrees-to-settle-class-action-lawsuit-with-california-drivers\/"
+        },
+        {
+            "type": "Blog",
+            "url": "http:\/\/open.blogs.nytimes.com\/"
+        },
+        {
+            "type": "Blog RSS",
+            "url": "http:\/\/open.blogs.nytimes.com\/feed\/"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "https:\/\/crunchbase.com\/organization\/newyorktimes"
+        },
+        {
+            "type": "Curated Source",
+            "url": "http:\/\/dealbook.nytimes.com\/2013\/06\/04\/salesforce-to-buy-exacttarget-for-2-5-billion\/"
+        },
+        {
+            "type": "Developers",
+            "url": "http:\/\/developer.nytimes.com"
+        },
+        {
+            "type": "Documentation",
+            "url": "http:\/\/developer.nytimes.com\/docs"
+        },
+        {
+            "type": "Email",
+            "url": "ayuda@nytimes.com"
+        },
+        {
+            "type": "Email",
+            "url": "accessibility@nytimes.com"
+        },
+        {
+            "type": "Events",
+            "url": "http:\/\/developers.nytimes.com\/events\/"
+        },
+        {
+            "type": "Explorer",
+            "url": "http:\/\/developer.nytimes.com\/io-docs"
+        },
+        {
+            "type": "Forum RSS",
+            "url": "http:\/\/developer.nytimes.com\/forum.rss"
+        },
+        {
+            "type": "Forums",
+            "url": "http:\/\/developer.nytimes.com\/forum"
+        },
+        {
+            "type": "Jobs",
+            "url": "http:\/\/developers.nytimes.com\/careers\/"
+        },
+        {
+            "type": "Blog RSS",
+            "url": "http:\/\/www.nytimes.com\/services\/xml\/rss\/nyt\/Technology.xml"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/18820-2019-09-04-12-06-14.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/18820-2019-09-04-12-07-27.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/18820-2019-09-03-20-35-25.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/18820-2019-09-03-23-59-40.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/18820-2019-09-03-17-53-11.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/18820-2019-09-03-17-53-32.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/18820-2019-09-03-16-07-21.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/18820-2019-09-03-17-57-21.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/18820-2019-09-04-04-23-32.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/18820-2019-09-03-06-23-44.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/18820-2019-09-03-06-45-25.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/18820-2019-09-03-16-25-33.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/18820-2019-09-04-09-32-25.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/18820-2019-09-03-07-01-56.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/18820-2019-09-04-00-17-16.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/18820-2019-09-04-09-32-55.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/18820-2019-09-04-01-33-51.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/18820-2019-09-04-03-24-30.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/18820-2019-09-04-00-18-07.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/18820-2019-09-03-16-27-21.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/18820-2019-09-04-00-18-47.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/18820-2019-09-04-00-19-06.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/18820-2019-09-03-16-28-47.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/18820-2019-09-04-12-36-55.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/18820-2019-09-04-12-37-17.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/18820-2019-09-04-12-38-04.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/18820-2019-09-04-12-38-22.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/18820-2019-09-04-09-01-14.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/18820-2019-09-04-12-39-33.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/18820-2019-09-04-02-51-35.json"
+        },
+        {
+            "type": "Privacy",
+            "url": "http:\/\/www.nytimes.com\/content\/help\/rights\/privacy\/policy\/privacy-policy.html"
+        },
+        {
+            "type": "Curated Source",
+            "url": "http:\/\/rss.nytimes.com\/c\/34625\/f\/640387\/s\/4ef17202\/sc\/13\/l\/0L0Snytimes0N0C20A160C0A40C150Ctechnology0Cmicrosoft0Esues0Eus0Eover0Eorders0Ebarring0Eit0Efrom0Erevealing0Esurveillance0Bhtml0Dpartner0Frss0Gemc0Frss\/story01.htm"
+        },
+        {
+            "type": "Registration",
+            "url": "https:\/\/myaccount.nytimes.com\/register"
+        },
+        {
+            "type": "Terms of Service",
+            "url": "http:\/\/developer.nytimes.com\/Api_terms_of_use"
+        },
+        {
+            "type": "Terms of Service",
+            "url": "https:\/\/developer.nytimes.com\/tou"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/nytimes"
+        },
+        {
+            "type": "Website",
+            "url": "http:\/\/nytimes.com"
+        },
+        {
+            "type": "Website",
+            "url": "http:\/\/nytimes.com\/"
+        }
+    ]
+}
