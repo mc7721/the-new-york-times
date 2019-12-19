@@ -1,0 +1,210 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "2.0.0",
+        "title": "Semantic API",
+        "description": "The Semantic API complements the Articles API. With the Semantic API, you get access to the long list of people, places, organizations and other locations, entities and descriptors that make up the controlled vocabulary used as metadata by The New York Times (sometimes referred to as Times Tags and used for Times Topics pages).\n\nThe Semantic API uses concepts which are, by definition, terms in The New York Times controlled vocabulary. Like the way facets are used in the Articles API, concepts are a good way to uncover articles of interest in The New York Times archive, and at the same time, limit the scope and number of those articles. The Semantic API maps to external semantic data resources, in a fashion consistent with the idea of linked data. The Semantic API also provides combination and relationship information to other, similar concepts in The New York Times controlled vocabulary.\n",
+        "termsOfService": "http:\/\/exmple.com\/license\/"
+    },
+    "servers": [
+        "http:\/\/api.nytimes.com\/svc\/semantic\/v2\/concept"
+    ],
+    "paths": {
+        "\/name\/{concept-type}\/{specific-concept}.json": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "concept-type",
+                        "in": "path",
+                        "description": "The type of the concept, used for Constructing a Semantic API Request by Concept Type and Specific Concept Name. The parameter is defined as a name-value pair, as in \"concept_type=[nytd_geo|nytd_per|nytd_org|nytd_des]\".\n"
+                    },
+                    {
+                        "name": "specific-concept",
+                        "in": "path",
+                        "description": "The name of the concept, used for Constructing a Semantic API Request by Concept Type and Specific Concept Name. The parameter is defined in the URI path, as the element immediately preceding \".json\" like with \"Baseball.json\".\n"
+                    },
+                    {
+                        "name": "fields",
+                        "in": "query",
+                        "description": "\"all\" or comma-separated list of specific optional fields: pages, ticker_symbol, links, taxonomy, combinations, geocodes, article_list, scope_notes, search_api_query\n\nOptional fields are returned in result_set. They are briefly explained here:\n\npages: A list of topic pages associated with a specific concept.\nticker_symbol: If this concept is a publicly traded company, this field contains the ticker symbol.\nlinks: A list of links from this concept to external data resources.\ntaxonomy: For descrip"
+                    },
+                    {
+                        "name": "query",
+                        "in": "query",
+                        "description": "Precedes the search term string. Used in a Search Query. Except for &lt;specific_concept_name&gt;, Search Query will take the required parameters listed above (&lt;concept_type&gt;, &lt;concept_uri&gt;, &lt;article_uri&gt;) as an optional_parameter in addition to the query=&lt;query_term&gt;."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An array of Concepts"
+                    }
+                }
+            }
+        },
+        "\/search.json": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "query",
+                        "in": "query",
+                        "description": "Precedes the search term string. Used in a Search Query. Except for &lt;specific_concept_name&gt;, Search Query will take the required parameters listed above (&lt;concept_type&gt;, &lt;concept_uri&gt;, &lt;article_uri&gt;) as an optional_parameter in addition to the query=&lt;query_term&gt;."
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Integer value for the index count from the first concept to the last concept, sorted alphabetically. Used in a Search Query. A Search Query will return up to 10 concepts in its results."
+                    },
+                    {
+                        "name": "fields",
+                        "in": "query",
+                        "description": "\"all\" or comma-separated list of specific optional fields: pages, ticker_symbol, links, taxonomy, combinations, geocodes, article_list, scope_notes, search_api_query\n\nOptional fields are returned in result_set. They are briefly explained here:\n\npages: A list of topic pages associated with a specific concept.\nticker_symbol: If this concept is a publicly traded company, this field contains the ticker symbol.\nlinks: A list of links from this concept to external data resources.\ntaxonomy: For descrip"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An array of Concepts"
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Concept": {
+                "type": "object",
+                "properties": {
+                    "concept_id": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "concept_name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "is_times_tag": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "concept_status": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "vernacular": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "concept_type": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "concept_created": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "concept_updated": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "taxonomy": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "links": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "search_api_query": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "article_list": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "scope_notes": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "combinations": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "ancestors": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "descendants": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "taxonomy": {
+                "type": "array"
+            },
+            "links": {
+                "type": "array"
+            },
+            "article_list": {
+                "type": "object"
+            },
+            "scope_notes": {
+                "type": "array"
+            },
+            "combinations": {
+                "type": "array"
+            },
+            "ancestors": {
+                "type": "array"
+            },
+            "descendants": {
+                "type": "array"
+            },
+            "ConceptRelation": {
+                "type": "object",
+                "properties": {
+                    "concept_id": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "concept_name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "is_times_tag": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "concept_status": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "vernacular": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "concept_type": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "concept_created": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "concept_updated": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}
