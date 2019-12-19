@@ -1,0 +1,110 @@
+{
+    "id": "81d6f9d272332ea66005f9ab74fbe274",
+    "name": "Semantic API",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "14edd215132e688626c79c03a23dab59",
+            "name": "",
+            "url": "http:\/\/api.nytimes.com\/svc\/semantic\/v2\/concept\/name\/{concept-type}\/{specific-concept}.json",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "concept-type",
+                    "description": "The type of the concept, used for Constructing a Semantic API Request by Concept Type and Specific Concept Name. The parameter is defined as a name-value pair, as in \"concept_type=[nytd_geo|nytd_per|nytd_org|nytd_des]\".\n",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "specific-concept",
+                    "description": "The name of the concept, used for Constructing a Semantic API Request by Concept Type and Specific Concept Name. The parameter is defined in the URI path, as the element immediately preceding \".json\" like with \"Baseball.json\".\n",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fields",
+                    "description": "\"all\" or comma-separated list of specific optional fields: pages, ticker_symbol, links, taxonomy, combinations, geocodes, article_list, scope_notes, search_api_query\n\nOptional fields are returned in result_set. They are briefly explained here:\n\npages: A list of topic pages associated with a specific concept.\nticker_symbol: If this concept is a publicly traded company, this field contains the ticker symbol.\nlinks: A list of links from this concept to external data resources.\ntaxonomy: For descrip",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "query",
+                    "description": "Precedes the search term string. Used in a Search Query. Except for &lt;specific_concept_name&gt;, Search Query will take the required parameters listed above (&lt;concept_type&gt;, &lt;concept_uri&gt;, &lt;article_uri&gt;) as an optional_parameter in addition to the query=&lt;query_term&gt;.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "81d6f9d272332ea66005f9ab74fbe274",
+            "rawModeData": ""
+        },
+        {
+            "id": "0b941b35ca3085725022397673feab91",
+            "name": "",
+            "url": "http:\/\/api.nytimes.com\/svc\/semantic\/v2\/concept\/search.json",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "query",
+                    "description": "Precedes the search term string. Used in a Search Query. Except for &lt;specific_concept_name&gt;, Search Query will take the required parameters listed above (&lt;concept_type&gt;, &lt;concept_uri&gt;, &lt;article_uri&gt;) as an optional_parameter in addition to the query=&lt;query_term&gt;.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "Integer value for the index count from the first concept to the last concept, sorted alphabetically. Used in a Search Query. A Search Query will return up to 10 concepts in its results.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fields",
+                    "description": "\"all\" or comma-separated list of specific optional fields: pages, ticker_symbol, links, taxonomy, combinations, geocodes, article_list, scope_notes, search_api_query\n\nOptional fields are returned in result_set. They are briefly explained here:\n\npages: A list of topic pages associated with a specific concept.\nticker_symbol: If this concept is a publicly traded company, this field contains the ticker symbol.\nlinks: A list of links from this concept to external data resources.\ntaxonomy: For descrip",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "81d6f9d272332ea66005f9ab74fbe274",
+            "rawModeData": ""
+        }
+    ]
+}
