@@ -1,0 +1,282 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "2.0.0",
+        "title": "The Most Popular API",
+        "description": "## Welcome\n\nThis is a place to put general notes and extra information, for internal use.\n\nTo get started designing\/documenting this API, select a version on the left.",
+        "termsOfService": "http:\/\/exmple.com\/license\/"
+    },
+    "servers": [
+        "http:\/\/api.nytimes.com\/svc\/mostpopular\/v2"
+    ],
+    "paths": {
+        "\/mostshared\/{section}\/{time-period}.json": {
+            "parameters": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "Most Shared by Section & Time Period",
+                "description": "",
+                "operationId": "GETMostsharedSectionTimePeriodJson",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "api-key",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An array of Articles"
+                    }
+                }
+            }
+        },
+        "\/mostemailed\/{section}\/{time-period}.json": {
+            "parameters": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "Most Emailed by Section & Time Period",
+                "description": "",
+                "operationId": "GETMostemailedSectionTimePeriodJson",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "api-key",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An array of Articles"
+                    }
+                }
+            }
+        },
+        "\/mostviewed\/{section}\/{time-period}.json": {
+            "parameters": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "Most Viewed by Section & Time Period",
+                "description": "",
+                "operationId": "GETMostviewedSectionTimePeriodJson",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "An array of Articles"
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "GeoFacet": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "PerFacet": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "OrgFacet": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "DesFacet": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "Article": {
+                "type": "object",
+                "properties": {
+                    "url": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "column": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "section": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "byline": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "title": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "abstract": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "published_date": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "source": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "DesFacet": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "des_facet": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "OrgFacet": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "org_facet": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "PerFacet": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "per_facet": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "GeoFacet": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "geo_facet": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "media": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "media": {
+                "type": "array"
+            },
+            "ArticleWithCountType": {
+                "type": "object",
+                "properties": {
+                    "url": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "count_type": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "column": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "section": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "byline": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "title": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "abstract": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "published_date": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "source": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "DesFacet": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "des_facet": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "OrgFacet": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "org_facet": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "PerFacet": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "per_facet": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "GeoFacet": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "geo_facet": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "media": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            }
+        }
+    }
+}
