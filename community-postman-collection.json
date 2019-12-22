@@ -1,5 +1,5 @@
 {
-    "id": "751c9b76a0b5f40116ffbf0e872f50af",
+    "id": "653199c38dae54533601cbe18f54763a",
     "name": "Community",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "76106505c3efbbcc77485be015fb5e05",
+            "id": "162cebbcb5566a000028f85c75304725",
             "name": "Comments by Date",
             "url": "http:\/\/api.nytimes.com\/svc\/community\/v3\/user-content\/by-date.json",
             "description": "",
@@ -37,11 +37,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "751c9b76a0b5f40116ffbf0e872f50af",
+            "collectionId": "653199c38dae54533601cbe18f54763a",
             "rawModeData": ""
         },
         {
-            "id": "b7e42a2277a0aea09580071740509bc4",
+            "id": "70837ad9136ef608e4d9aedddee33743",
             "name": "",
             "url": "http:\/\/api.nytimes.com\/svc\/community\/v3\/user-content\/by-date.json",
             "description": "",
@@ -60,11 +60,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "751c9b76a0b5f40116ffbf0e872f50af",
+            "collectionId": "653199c38dae54533601cbe18f54763a",
             "rawModeData": ""
         },
         {
-            "id": "22b16fbcea0665892b5b1d46bbaefee4",
+            "id": "fd303c1eb50371e2b47e58aa3eca625e",
             "name": "Recent User Comments",
             "url": "http:\/\/api.nytimes.com\/svc\/community\/v3\/user-content\/recent.json",
             "description": "",
@@ -83,11 +83,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "751c9b76a0b5f40116ffbf0e872f50af",
+            "collectionId": "653199c38dae54533601cbe18f54763a",
             "rawModeData": ""
         },
         {
-            "id": "8fa6074d8a98e9d74f2e1d602f1d9d7e",
+            "id": "9fc3f06e06a9876a8d2297ab05b49021",
             "name": "",
             "url": "http:\/\/api.nytimes.com\/svc\/community\/v3\/user-content\/recent.json",
             "description": "",
@@ -106,11 +106,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "751c9b76a0b5f40116ffbf0e872f50af",
+            "collectionId": "653199c38dae54533601cbe18f54763a",
             "rawModeData": ""
         },
         {
-            "id": "2c6fa1e693d7dd1c6ed0f201e8f35d88",
+            "id": "c2d198b3d8340c44273b53c13d522e1f",
             "name": "Comments by URL",
             "url": "http:\/\/api.nytimes.com\/svc\/community\/v3\/user-content\/url.json",
             "description": "",
@@ -137,11 +137,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "751c9b76a0b5f40116ffbf0e872f50af",
+            "collectionId": "653199c38dae54533601cbe18f54763a",
             "rawModeData": ""
         },
         {
-            "id": "8936d764303a66105e2e03ac1c2b93e0",
+            "id": "6d0e49568da650b8cbbeae8a311f0b87",
             "name": "",
             "url": "http:\/\/api.nytimes.com\/svc\/community\/v3\/user-content\/url.json",
             "description": "",
@@ -160,11 +160,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "751c9b76a0b5f40116ffbf0e872f50af",
+            "collectionId": "653199c38dae54533601cbe18f54763a",
             "rawModeData": ""
         },
         {
-            "id": "26221ef753d311f6246d5c903a246102",
+            "id": "280c662d8ea2be2841ec0c26a2711435",
             "name": "Comments by User",
             "url": "http:\/\/api.nytimes.com\/svc\/community\/v3\/user-content\/user.json",
             "description": "",
@@ -191,11 +191,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "751c9b76a0b5f40116ffbf0e872f50af",
+            "collectionId": "653199c38dae54533601cbe18f54763a",
             "rawModeData": ""
         },
         {
-            "id": "64c86f59fce34cb3e70efafd7a7042f9",
+            "id": "21003245b7d878f7e5267ad6b6e434f3",
             "name": "",
             "url": "http:\/\/api.nytimes.com\/svc\/community\/v3\/user-content\/user.json",
             "description": "",
@@ -214,7 +214,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "751c9b76a0b5f40116ffbf0e872f50af",
+            "collectionId": "653199c38dae54533601cbe18f54763a",
             "rawModeData": ""
         }
     ]
