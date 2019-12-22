@@ -1,5 +1,5 @@
 {
-    "id": "153b0b3968c3929724b82e87e044f51c",
+    "id": "58dd154fbe6f148db1f2317f327dceb2",
     "name": "Geographic",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "f334862042bf71c10101baeae8fc7dfb",
+            "id": "86b60c82bdd0efed8aa85b96e31f9332",
             "name": "Geographic API",
             "url": "http:\/\/api.nytimes.com\/svc\/semantic\/v2\/geocodes\/query.json",
             "description": "Geographic API",
@@ -114,7 +114,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "153b0b3968c3929724b82e87e044f51c",
+            "collectionId": "58dd154fbe6f148db1f2317f327dceb2",
             "rawModeData": ""
         }
     ]
