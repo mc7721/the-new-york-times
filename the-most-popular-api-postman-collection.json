@@ -1,5 +1,5 @@
 {
-    "id": "fab0e6cdc4bb12b3dd276b67bdc4dbaa",
+    "id": "340bb2c22a1d03dbd26fdcd822b0fae7",
     "name": "The Most Popular API",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "2433c3379dc3c91567496531c067f61c",
+            "id": "4b76b3c6a88729efc95691fadf528fe9",
             "name": "",
             "url": "http:\/\/api.nytimes.com\/svc\/mostpopular\/v2\/mostshared\/{section}\/{time-period}.json",
             "description": "",
@@ -29,11 +29,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fab0e6cdc4bb12b3dd276b67bdc4dbaa",
+            "collectionId": "340bb2c22a1d03dbd26fdcd822b0fae7",
             "rawModeData": ""
         },
         {
-            "id": "da70aeae49d6069f2a967c54e09f8b7e",
+            "id": "efb27309c30f6bba3c4fca2dcc74cc6c",
             "name": "Most Shared by Section & Time Period",
             "url": "http:\/\/api.nytimes.com\/svc\/mostpopular\/v2\/mostshared\/{section}\/{time-period}.json",
             "description": "",
@@ -60,11 +60,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fab0e6cdc4bb12b3dd276b67bdc4dbaa",
+            "collectionId": "340bb2c22a1d03dbd26fdcd822b0fae7",
             "rawModeData": ""
         },
         {
-            "id": "9e475857387a7e3e4d884d93b2ff5f1e",
+            "id": "5e65c8f776da816af17d3a2812f076a8",
             "name": "",
             "url": "http:\/\/api.nytimes.com\/svc\/mostpopular\/v2\/mostemailed\/{section}\/{time-period}.json",
             "description": "",
@@ -83,11 +83,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fab0e6cdc4bb12b3dd276b67bdc4dbaa",
+            "collectionId": "340bb2c22a1d03dbd26fdcd822b0fae7",
             "rawModeData": ""
         },
         {
-            "id": "0d108b3569c433aec9ac90896feef6f4",
+            "id": "537a4c68bea31d9b5e7be6ba40849ac8",
             "name": "Most Emailed by Section & Time Period",
             "url": "http:\/\/api.nytimes.com\/svc\/mostpopular\/v2\/mostemailed\/{section}\/{time-period}.json",
             "description": "",
@@ -114,11 +114,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fab0e6cdc4bb12b3dd276b67bdc4dbaa",
+            "collectionId": "340bb2c22a1d03dbd26fdcd822b0fae7",
             "rawModeData": ""
         },
         {
-            "id": "c27617a460dc9e455b91ba45e8b36139",
+            "id": "4bebdf9ead823b943712c6efb7cf3662",
             "name": "",
             "url": "http:\/\/api.nytimes.com\/svc\/mostpopular\/v2\/mostviewed\/{section}\/{time-period}.json",
             "description": "",
@@ -137,11 +137,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fab0e6cdc4bb12b3dd276b67bdc4dbaa",
+            "collectionId": "340bb2c22a1d03dbd26fdcd822b0fae7",
             "rawModeData": ""
         },
         {
-            "id": "8ee9a19e28e83b5020d4eaf66ae2a8c3",
+            "id": "26b895bc7b4c5144849a767bb7ea5887",
             "name": "Most Viewed by Section & Time Period",
             "url": "http:\/\/api.nytimes.com\/svc\/mostpopular\/v2\/mostviewed\/{section}\/{time-period}.json",
             "description": "",
@@ -160,7 +160,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fab0e6cdc4bb12b3dd276b67bdc4dbaa",
+            "collectionId": "340bb2c22a1d03dbd26fdcd822b0fae7",
             "rawModeData": ""
         }
     ]
