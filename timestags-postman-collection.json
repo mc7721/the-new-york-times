@@ -1,5 +1,5 @@
 {
-    "id": "7aaf52c3901185e09eceee2f5dae18ab",
+    "id": "b5343af38834f1b4d6608aae15b7fb35",
     "name": "TimesTags",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "b6d8000ea8e08df3c06f65dd414423aa",
+            "id": "5bf6c0d8780c7a43a8731f1ef53daab0",
             "name": "",
             "url": "http:\/\/api.nytimes.com\/svc\/suggest\/v1\/timestags.json",
             "description": "",
@@ -51,11 +51,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7aaf52c3901185e09eceee2f5dae18ab",
+            "collectionId": "b5343af38834f1b4d6608aae15b7fb35",
             "rawModeData": ""
         },
         {
-            "id": "7d23492604a19bebd55bb311232f0b26",
+            "id": "83546252f9d1feab72f0766c1687226b",
             "name": "",
             "url": "http:\/\/api.nytimes.com\/svc\/suggest\/v1\/timestags",
             "description": "",
@@ -96,7 +96,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7aaf52c3901185e09eceee2f5dae18ab",
+            "collectionId": "b5343af38834f1b4d6608aae15b7fb35",
             "rawModeData": ""
         }
     ]
