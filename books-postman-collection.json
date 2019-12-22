@@ -1,5 +1,5 @@
 {
-    "id": "8cf45fb1640ce82ca450747b407ec932",
+    "id": "7fcb4e246f016f1a87f95b7e3d31498d",
     "name": "Books",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "000411437d844382a909314b4ffe66e1",
+            "id": "c53ce6bc8b4693e02d5520c70669f3bb",
             "name": "Best Seller List",
             "url": "http:\/\/api.nytimes.com\/svc\/books\/v3\/lists.{format}",
             "description": "",
@@ -100,11 +100,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8cf45fb1640ce82ca450747b407ec932",
+            "collectionId": "7fcb4e246f016f1a87f95b7e3d31498d",
             "rawModeData": ""
         },
         {
-            "id": "d75efd335ac314b9887febcd3c57cbef",
+            "id": "154da814fe3a6cb072a25273c116e9c8",
             "name": "",
             "url": "http:\/\/api.nytimes.com\/svc\/books\/v3\/lists.{format}",
             "description": "",
@@ -123,11 +123,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8cf45fb1640ce82ca450747b407ec932",
+            "collectionId": "7fcb4e246f016f1a87f95b7e3d31498d",
             "rawModeData": ""
         },
         {
-            "id": "d72cf60a635f1d4c2785ed3072b6b36e",
+            "id": "b3e1eda0b60a406c4d76d2dff5f417f5",
             "name": "Best Seller History List",
             "url": "http:\/\/api.nytimes.com\/svc\/books\/v3\/lists\/best-sellers\/history.json",
             "description": "",
@@ -196,11 +196,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8cf45fb1640ce82ca450747b407ec932",
+            "collectionId": "7fcb4e246f016f1a87f95b7e3d31498d",
             "rawModeData": ""
         },
         {
-            "id": "f02f99ca658e3122fffcf712331e4753",
+            "id": "c8bdd58697d98625ccf7621840406d1b",
             "name": "",
             "url": "http:\/\/api.nytimes.com\/svc\/books\/v3\/lists\/best-sellers\/history.json",
             "description": "",
@@ -219,11 +219,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8cf45fb1640ce82ca450747b407ec932",
+            "collectionId": "7fcb4e246f016f1a87f95b7e3d31498d",
             "rawModeData": ""
         },
         {
-            "id": "3ea3f9e0afdc6f654b7ededce4ffd1ba",
+            "id": "cc1a6ed70a9a160b5a783ed7cc1a5cc5",
             "name": "Best Seller List Names",
             "url": "http:\/\/api.nytimes.com\/svc\/books\/v3\/lists\/names.{format}",
             "description": "",
@@ -250,11 +250,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8cf45fb1640ce82ca450747b407ec932",
+            "collectionId": "7fcb4e246f016f1a87f95b7e3d31498d",
             "rawModeData": ""
         },
         {
-            "id": "219265edf46fc2aaac8d38822dbbb7f6",
+            "id": "3567860719f7f81a015cc5dd16180634",
             "name": "",
             "url": "http:\/\/api.nytimes.com\/svc\/books\/v3\/lists\/names.{format}",
             "description": "",
@@ -273,11 +273,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8cf45fb1640ce82ca450747b407ec932",
+            "collectionId": "7fcb4e246f016f1a87f95b7e3d31498d",
             "rawModeData": ""
         },
         {
-            "id": "98bf337221e6bf0350fac2809529236c",
+            "id": "4f509d4cf5c34773e0ad5b20f6d7193f",
             "name": "Best Seller List Overview",
             "url": "http:\/\/api.nytimes.com\/svc\/books\/v3\/lists\/overview.{format}",
             "description": "",
@@ -311,11 +311,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8cf45fb1640ce82ca450747b407ec932",
+            "collectionId": "7fcb4e246f016f1a87f95b7e3d31498d",
             "rawModeData": ""
         },
         {
-            "id": "dcf3692ce1e9d5cc51260e4f6f513e30",
+            "id": "7739ee4a46db6bab66c03f004cc38f3d",
             "name": "",
             "url": "http:\/\/api.nytimes.com\/svc\/books\/v3\/lists\/overview.{format}",
             "description": "",
@@ -334,11 +334,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8cf45fb1640ce82ca450747b407ec932",
+            "collectionId": "7fcb4e246f016f1a87f95b7e3d31498d",
             "rawModeData": ""
         },
         {
-            "id": "fc9a0102cad46d2d63ceaa2d19976561",
+            "id": "59244f44e15150678dee088b2a8b87df",
             "name": "Best Seller List by Date",
             "url": "http:\/\/api.nytimes.com\/svc\/books\/v3\/lists\/{date}\/{list}.json",
             "description": "",
@@ -421,11 +421,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8cf45fb1640ce82ca450747b407ec932",
+            "collectionId": "7fcb4e246f016f1a87f95b7e3d31498d",
             "rawModeData": ""
         },
         {
-            "id": "d4c518377c2fe71cca28b219aa127168",
+            "id": "102f535f39473a3ac05fe28a7608029b",
             "name": "",
             "url": "http:\/\/api.nytimes.com\/svc\/books\/v3\/lists\/{date}\/{list}.json",
             "description": "",
@@ -444,11 +444,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8cf45fb1640ce82ca450747b407ec932",
+            "collectionId": "7fcb4e246f016f1a87f95b7e3d31498d",
             "rawModeData": ""
         },
         {
-            "id": "880fc6e48708199f1b5751867bfedf10",
+            "id": "2ad3944d605004eef1a44b7cee8fa6df",
             "name": "Reviews",
             "url": "http:\/\/api.nytimes.com\/svc\/books\/v3\/reviews.{format}",
             "description": "",
@@ -496,11 +496,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8cf45fb1640ce82ca450747b407ec932",
+            "collectionId": "7fcb4e246f016f1a87f95b7e3d31498d",
             "rawModeData": ""
         },
         {
-            "id": "1f6cccacfc8834413c8cb7a17e777722",
+            "id": "9f8f96fedc946965220fd65cdffefebf",
             "name": "",
             "url": "http:\/\/api.nytimes.com\/svc\/books\/v3\/reviews.{format}",
             "description": "",
@@ -519,7 +519,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8cf45fb1640ce82ca450747b407ec932",
+            "collectionId": "7fcb4e246f016f1a87f95b7e3d31498d",
             "rawModeData": ""
         }
     ]
