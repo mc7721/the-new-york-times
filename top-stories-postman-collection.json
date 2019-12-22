@@ -1,5 +1,5 @@
 {
-    "id": "ce3d6031efcd0996b94ef3bf09cd358c",
+    "id": "7abde8c8236909856fa6f6159acb1413",
     "name": "Top Stories",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "4a7c65456e91d77f53e8ec30086e5b4c",
+            "id": "dc49d17237ec5fca6a2be7995b42f0cf",
             "name": "Top Stories",
             "url": "http:\/\/api.nytimes.com\/svc\/topstories\/v2\/{section}.{format}",
             "description": "The Top Stories API returns a list of articles and associated images currently on the specified section.  Support JSON and JSONP.\n",
@@ -51,7 +51,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "ce3d6031efcd0996b94ef3bf09cd358c",
+            "collectionId": "7abde8c8236909856fa6f6159acb1413",
             "rawModeData": ""
         }
     ]
