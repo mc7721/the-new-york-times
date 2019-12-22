@@ -14,8 +14,8 @@
         "service api",
         "streams"
     ],
-    "created": "2019-12-19",
-    "modified": "2019-12-19",
+    "created": "2019-12-21",
+    "modified": "2019-12-21",
     "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/the-new-york-times\/master\/apis.json",
     "specificationVersion": "0.14",
     "apis": [
@@ -32,12 +32,8 @@
                     "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/article-search-api.json"
                 },
                 {
-                    "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/article-search-api-openapi.json"
-                },
-                {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/article-search-api-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/the-new-york-times\/master\/article-search-api-postman-collection.json"
                 }
             ]
         },
@@ -54,12 +50,8 @@
                     "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/archive.json"
                 },
                 {
-                    "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/archive-openapi.json"
-                },
-                {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/archive-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/the-new-york-times\/master\/archive-postman-collection.json"
                 }
             ]
         },
@@ -76,12 +68,8 @@
                     "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/community.json"
                 },
                 {
-                    "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/community-openapi.json"
-                },
-                {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/community-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/the-new-york-times\/master\/community-postman-collection.json"
                 }
             ]
         },
@@ -98,12 +86,8 @@
                     "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/the-most-popular-api.json"
                 },
                 {
-                    "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/the-most-popular-api-openapi.json"
-                },
-                {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/the-most-popular-api-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/the-new-york-times\/master\/the-most-popular-api-postman-collection.json"
                 }
             ]
         },
@@ -120,12 +104,8 @@
                     "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/article-search.json"
                 },
                 {
-                    "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/article-search-openapi.json"
-                },
-                {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/article-search-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/the-new-york-times\/master\/article-search-postman-collection.json"
                 }
             ]
         },
@@ -142,12 +122,8 @@
                     "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/semantic.json"
                 },
                 {
-                    "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/semantic-openapi.json"
-                },
-                {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/semantic-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/the-new-york-times\/master\/semantic-postman-collection.json"
                 }
             ]
         },
@@ -164,12 +140,8 @@
                     "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/geographic.json"
                 },
                 {
-                    "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/geographic-openapi.json"
-                },
-                {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/geographic-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/the-new-york-times\/master\/geographic-postman-collection.json"
                 }
             ]
         },
@@ -186,12 +158,8 @@
                     "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/top-stories.json"
                 },
                 {
-                    "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/top-stories-openapi.json"
-                },
-                {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/top-stories-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/the-new-york-times\/master\/top-stories-postman-collection.json"
                 }
             ]
         },
@@ -208,12 +176,8 @@
                     "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/semantic-api.json"
                 },
                 {
-                    "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/semantic-api-openapi.json"
-                },
-                {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/semantic-api-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/the-new-york-times\/master\/semantic-api-postman-collection.json"
                 }
             ]
         },
@@ -230,12 +194,8 @@
                     "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/new-york-times.json"
                 },
                 {
-                    "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/new-york-times-openapi.json"
-                },
-                {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/new-york-times-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/the-new-york-times\/master\/new-york-times-postman-collection.json"
                 }
             ]
         },
@@ -252,12 +212,8 @@
                     "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/timestags.json"
                 },
                 {
-                    "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/timestags-openapi.json"
-                },
-                {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/timestags-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/the-new-york-times\/master\/timestags-postman-collection.json"
                 }
             ]
         },
@@ -274,12 +230,8 @@
                     "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/books.json"
                 },
                 {
-                    "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/books-openapi.json"
-                },
-                {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/books-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/the-new-york-times\/master\/books-postman-collection.json"
                 }
             ]
         },
@@ -296,18 +248,18 @@
                     "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/most-popular.json"
                 },
                 {
-                    "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/most-popular-openapi.json"
-                },
-                {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/most-popular-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/the-new-york-times\/master\/most-popular-postman-collection.json"
                 }
             ]
         }
     ],
     "include": [],
     "x-common": [
+        {
+            "type": "APIs.json",
+            "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/apis.json"
+        },
         {
             "type": "Application Gallery",
             "url": "http:\/\/developer.nytimes.com\/gallery"
