@@ -1,5 +1,5 @@
 {
-    "id": "e1323697a2e0d77ce69e94cc3439816d",
+    "id": "8524e28a5253da55891ed3ba0432e9cc",
     "name": "Archive",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "937f52ec628f45eb39cc06cb4a3aa9bc",
+            "id": "41e9ab3c9f5c27e067f4ce20aeb59347",
             "name": "Archive API",
             "url": "http:\/\/api.nytimes.com\/svc\/archive\/v1\/{year}\/{month}.json",
             "description": "The Archive API provides lists of NYT articles by month going back to 1851.  Simply pass in the year and month you want and it returns a JSON object with all articles for that month.\n",
@@ -44,7 +44,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e1323697a2e0d77ce69e94cc3439816d",
+            "collectionId": "8524e28a5253da55891ed3ba0432e9cc",
             "rawModeData": ""
         }
     ]
