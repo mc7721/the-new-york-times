@@ -1,5 +1,5 @@
 {
-    "id": "6a5c4bf9a9635f66faa97c1b3b024558",
+    "id": "3837927f84f6d5d648c7f4cbca2d93e5",
     "name": "Article Search API",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "fb42b7b84641622630f4f8f601a7e3d2",
+            "id": "c5b7a586bec9fad33cd9bfff97328c91",
             "name": "Article Search",
             "url": "http:\/\/api.nytimes.com\/svc\/search\/v2\/articlesearch.json",
             "description": "Article Search requests use the following URI structure:\n",
@@ -100,7 +100,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6a5c4bf9a9635f66faa97c1b3b024558",
+            "collectionId": "3837927f84f6d5d648c7f4cbca2d93e5",
             "rawModeData": ""
         }
     ]
