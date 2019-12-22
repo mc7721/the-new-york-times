@@ -1,5 +1,5 @@
 {
-    "id": "81d6f9d272332ea66005f9ab74fbe274",
+    "id": "20d6dcbe07f5ef182cfd6a28d08893e9",
     "name": "Semantic API",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "14edd215132e688626c79c03a23dab59",
+            "id": "26c63098fa864e2fb1f36d271970d35a",
             "name": "",
             "url": "http:\/\/api.nytimes.com\/svc\/semantic\/v2\/concept\/name\/{concept-type}\/{specific-concept}.json",
             "description": "",
@@ -58,11 +58,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "81d6f9d272332ea66005f9ab74fbe274",
+            "collectionId": "20d6dcbe07f5ef182cfd6a28d08893e9",
             "rawModeData": ""
         },
         {
-            "id": "0b941b35ca3085725022397673feab91",
+            "id": "760937a833acba7148f8b118a8d6d177",
             "name": "",
             "url": "http:\/\/api.nytimes.com\/svc\/semantic\/v2\/concept\/search.json",
             "description": "",
@@ -103,7 +103,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "81d6f9d272332ea66005f9ab74fbe274",
+            "collectionId": "20d6dcbe07f5ef182cfd6a28d08893e9",
             "rawModeData": ""
         }
     ]
