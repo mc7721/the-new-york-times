@@ -1,5 +1,5 @@
 {
-    "id": "82f052d44ad0460bdc74e0c7d64701ba",
+    "id": "4b3248efd937eca4b674ce4ce1398448",
     "name": "New York Times",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "84809001a982442645bf795810b4dfbd",
+            "id": "006601f1cf73c3d0063e6f64ff40f2bb",
             "name": "Top Stories",
             "url": "httpsapi.nytimes.com\/svc\/topstories\/v2\/{section}.{format}",
             "description": "The Top Stories API returns a list of articles and associated images currently on the specified section.  Support JSON and JSONP.\n",
@@ -51,11 +51,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "82f052d44ad0460bdc74e0c7d64701ba",
+            "collectionId": "4b3248efd937eca4b674ce4ce1398448",
             "rawModeData": ""
         },
         {
-            "id": "02f062b5725f60631b0ab51626ab616d",
+            "id": "079322b9c83ab2818a03d4858f340bbe",
             "name": "Article Search",
             "url": "httpsapi.nytimes.com\/svc\/search\/v2\/articlesearch.json",
             "description": "Article SearchWith the Article Search API, you can search New York Times articles from Sept. 18, 1851 to today, retrieving headlines, abstracts, lead paragraphs, links to associated multimedia and other article.",
@@ -152,11 +152,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "82f052d44ad0460bdc74e0c7d64701ba",
+            "collectionId": "4b3248efd937eca4b674ce4ce1398448",
             "rawModeData": ""
         },
         {
-            "id": "f5891bf30fae6fa4db9b468d6a403831",
+            "id": "df37cc4e21cbe7960234f39d990e3116",
             "name": "Best Seller History List",
             "url": "httpsapi.nytimes.com\/svc\/books\/v2\/lists\/best-sellers\/history.json",
             "description": "The Best Sellers history service returns books and their history on the NYT Best Sellers lists.",
@@ -225,11 +225,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "82f052d44ad0460bdc74e0c7d64701ba",
+            "collectionId": "4b3248efd937eca4b674ce4ce1398448",
             "rawModeData": ""
         },
         {
-            "id": "b7339c37e385f27134326dbdfd15f413",
+            "id": "f0ed25b3db24621bc9db085d0a7473e1",
             "name": "Best Seller List",
             "url": "httpsapi.nytimes.com\/svc\/books\/v2\/lists.{format}",
             "description": "The Books API has services for getting information about The New York Times Best Sellers Lists and Book Reviews.",
@@ -319,11 +319,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "82f052d44ad0460bdc74e0c7d64701ba",
+            "collectionId": "4b3248efd937eca4b674ce4ce1398448",
             "rawModeData": ""
         },
         {
-            "id": "02544e4d9964cd93d84b7ce5904a0ea0",
+            "id": "f0405f9c85dc34da096477d9364dd58d",
             "name": "Best Seller List by Date",
             "url": "httpsapi.nytimes.com\/svc\/books\/v2\/lists\/{date}\/{list}.json",
             "description": "You can optionally request an overview for a specific published date using the published_date query parameter.",
@@ -406,11 +406,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "82f052d44ad0460bdc74e0c7d64701ba",
+            "collectionId": "4b3248efd937eca4b674ce4ce1398448",
             "rawModeData": ""
         },
         {
-            "id": "54a6e4c684ca9f06fb6209cc9c1d5731",
+            "id": "a8a8ca72ca36143b06a486f7ae95cdfa",
             "name": "Best Seller List Overview",
             "url": "httpsapi.nytimes.com\/svc\/books\/v2\/lists\/overview.{format}",
             "description": "The overview service returns the top 5 books for all the Best Sellers lists.",
@@ -451,11 +451,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "82f052d44ad0460bdc74e0c7d64701ba",
+            "collectionId": "4b3248efd937eca4b674ce4ce1398448",
             "rawModeData": ""
         },
         {
-            "id": "44aaac3b2d4223309f3201c2c3425b08",
+            "id": "7f99bc150f69a4b1b1c30fc87d5860c2",
             "name": "Best Seller List Names",
             "url": "httpsapi.nytimes.com\/svc\/books\/v2\/lists\/names.{format}",
             "description": "The names service returns a list of Best Sellers list names. It includes in the response the type of list (weekly or monthly) and when it was first published and last published. Lists have been added and removed over time. For example the Food and Diet list was added in 2013 and the Children???s Chapter Books list was removed in 2012. The response also includes the list_name_encoded which you use when calling the details service.",
@@ -489,11 +489,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "82f052d44ad0460bdc74e0c7d64701ba",
+            "collectionId": "4b3248efd937eca4b674ce4ce1398448",
             "rawModeData": ""
         },
         {
-            "id": "66f523a8ddab0a2baa9b74b0ef756a2f",
+            "id": "18febac57d701fb8ce88d568ffa1e93f",
             "name": "Geographic API",
             "url": "httpsapi.nytimes.com\/svc\/query.json",
             "description": "The Geographic API extends the Semantic API, using a linked data approach to enhance location concepts used in The New York Times' controlled vocabulary and data resources which combine them with the GeoNames database, an authoritative and free to use database of global geographical places, names and features.",
@@ -597,11 +597,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "82f052d44ad0460bdc74e0c7d64701ba",
+            "collectionId": "4b3248efd937eca4b674ce4ce1398448",
             "rawModeData": ""
         },
         {
-            "id": "a2c5df712bf50625f68451012ca4cc40",
+            "id": "83bf690f73f3dcb5e3c1a5ade1b98407",
             "name": "Most Shared by Section & Time Period",
             "url": "httpsapi.nytimes.com\/svc\/mostpopular\/v2\/mostshared\/{section}\/{time-period}.json",
             "description": "With the Most Popular API, you can get links and metadata for the blog posts and articles that are most frequently e-mailed, shared and viewed by NYTimes.co",
@@ -635,11 +635,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "82f052d44ad0460bdc74e0c7d64701ba",
+            "collectionId": "4b3248efd937eca4b674ce4ce1398448",
             "rawModeData": ""
         },
         {
-            "id": "32b420dc63af4cbdfeeb647ee908901c",
+            "id": "7d6389b49b62857b36abef064a561c5e",
             "name": "Most Emailed by Section & Time Period",
             "url": "httpsapi.nytimes.com\/svc\/mostpopular\/v2\/mostemailed\/{section}\/{time-period}.json",
             "description": "With the Most Popular API, you can get links and metadata for the blog posts and articles that are most frequently e-mailed, shared and viewed by NYTimes.co",
@@ -673,11 +673,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "82f052d44ad0460bdc74e0c7d64701ba",
+            "collectionId": "4b3248efd937eca4b674ce4ce1398448",
             "rawModeData": ""
         },
         {
-            "id": "35799eaa2d0695b5dc785951d3468c09",
+            "id": "66213f36f302e81f89b0bbd4e9c0fda3",
             "name": "Most Viewed by Section & Time Period",
             "url": "httpsapi.nytimes.com\/svc\/mostpopular\/v2\/mostviewed\/{section}\/{time-period}.json",
             "description": "With the Most Popular API, you can get links and metadata for the blog posts and articles that are most frequently e-mailed, shared and viewed by NYTimes.co",
@@ -711,11 +711,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "82f052d44ad0460bdc74e0c7d64701ba",
+            "collectionId": "4b3248efd937eca4b674ce4ce1398448",
             "rawModeData": ""
         },
         {
-            "id": "2072c3bdc3b7d98fcf75d4194561d49e",
+            "id": "dc736246a42497ce196497ae4067298d",
             "name": "Movie Review Search",
             "url": "httpsapi.nytimes.com\/svc\/movies\/v2\/reviews\/search.json",
             "description": "With the Movie Reviews API, you can search New York Times movie reviews by keyword and get lists of NYT Critics' Picks.",
@@ -784,11 +784,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "82f052d44ad0460bdc74e0c7d64701ba",
+            "collectionId": "4b3248efd937eca4b674ce4ce1398448",
             "rawModeData": ""
         },
         {
-            "id": "9cf09e8629859d0517258ddf40e79762",
+            "id": "ac87d03a0fc4ef64d74b758d8641efd6",
             "name": "The Semantic API",
             "url": "httpsapi.nytimes.com\/svc\/name\/{concept-type}\/{specific-concept}.json",
             "description": "The Semantic API complements the Articles API. With the Semantic API, you get access to the long list of people, places, organizations and other locations, entities and descriptors that make up the controlled vocabulary used as metadata by The New York Times (sometimes referred to as Times Tags and used for Times Topics pages.",
@@ -836,11 +836,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "82f052d44ad0460bdc74e0c7d64701ba",
+            "collectionId": "4b3248efd937eca4b674ce4ce1398448",
             "rawModeData": ""
         },
         {
-            "id": "70db43e6dfd2835c560af19030015991",
+            "id": "35084fa332f77f64fa2d628f263686a9",
             "name": "Times Tag",
             "url": "httpsapi.nytimes.com\/svc\/timestags",
             "description": "With the TimesTags API, you can mine the riches of the New York Times tag set. The TimesTags service matches your query to the controlled vocabularies that fuel NYTimes.com metadata. You supply a string of characters, and the service returns a ranked list of suggested terms.",
@@ -881,7 +881,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "82f052d44ad0460bdc74e0c7d64701ba",
+            "collectionId": "4b3248efd937eca4b674ce4ce1398448",
             "rawModeData": ""
         }
     ]
